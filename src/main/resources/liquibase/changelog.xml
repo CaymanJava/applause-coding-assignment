@@ -1,0 +1,41 @@
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd">
+
+    <changeSet author="dbosenko" id="1">
+        <sqlFile path="001_create_countries.sql" relativeToChangelogFile="true"/>
+        <comment>
+            Create countries
+        </comment>
+    </changeSet>
+
+    <changeSet author="dbosenko" id="2">
+        <sqlFile path="002_create_devices.sql" relativeToChangelogFile="true"/>
+        <comment>
+            Create devices
+        </comment>
+    </changeSet>
+
+    <changeSet author="dbosenko" id="3">
+        <sqlFile path="003_create_testers.sql" relativeToChangelogFile="true"/>
+        <comment>
+            Create testers
+        </comment>
+    </changeSet>
+
+    <changeSet author="dbosenko" id="4">
+        <sqlFile path="004_create_testers_devices.sql" relativeToChangelogFile="true"/>
+        <comment>
+            Create testers devices
+        </comment>
+    </changeSet>
+
+    <changeSet author="dbosenko" id="5">
+        <sqlFile path="005_create_bugs.sql" relativeToChangelogFile="true"/>
+        <comment>
+            Create bugs
+        </comment>
+    </changeSet>
+
+</databaseChangeLog>

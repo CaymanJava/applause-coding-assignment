@@ -1,0 +1,10 @@
+temp
+target/
+work
+logs/*
+.idea
+log/*
+debug
+gc.log
+*.iml
+transaction-logs/*

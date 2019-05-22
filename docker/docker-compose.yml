@@ -1,0 +1,7 @@
+postgres:
+  build: postgres
+  hostname: "postgres"
+  environment:
+    - PGDATA=/var/lib/postgresql/data/applause_coding_assignment/
+  ports:
+    - "5432:5432"
