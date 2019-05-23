@@ -4,6 +4,7 @@ import org.testcontainers.containers.PostgreSQLContainer;
 import org.testcontainers.utility.MountableFile;
 
 public class CustomPostgresqlContainer extends PostgreSQLContainer<CustomPostgresqlContainer> {
+
     private static final String IMAGE_VERSION = "postgres:11.1";
     private static CustomPostgresqlContainer container;
 
@@ -32,4 +33,5 @@ public class CustomPostgresqlContainer extends PostgreSQLContainer<CustomPostgre
     public void stop() {
         //do nothing, JVM handles shut down
     }
+
 }
